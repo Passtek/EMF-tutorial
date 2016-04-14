@@ -104,7 +104,7 @@ public interface WebpagePackage extends EPackage {
 	int WEB__KEYWORD = 3;
 
 	/**
-	 * The feature id for the '<em><b>Pages</b></em>' reference list.
+	 * The feature id for the '<em><b>Pages</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -361,10 +361,10 @@ public interface WebpagePackage extends EPackage {
 	EAttribute getWeb_Keyword();
 
 	/**
-	 * Returns the meta object for the reference list '{@link com.antoine.emf.webpage.model.webpage.Web#getPages <em>Pages</em>}'.
+	 * Returns the meta object for the containment reference list '{@link com.antoine.emf.webpage.model.webpage.Web#getPages <em>Pages</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Pages</em>'.
+	 * @return the meta object for the containment reference list '<em>Pages</em>'.
 	 * @see com.antoine.emf.webpage.model.webpage.Web#getPages()
 	 * @see #getWeb()
 	 * @generated
@@ -577,7 +577,7 @@ public interface WebpagePackage extends EPackage {
 		EAttribute WEB__KEYWORD = eINSTANCE.getWeb_Keyword();
 
 		/**
-		 * The meta object literal for the '<em><b>Pages</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Pages</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

@@ -321,10 +321,9 @@
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_kWh88AIdEeajYPW0ApiYNA" name="[0..*] pages" sourceNode="_sNhj0AIcEeajYPW0ApiYNA" targetNode="_tk9Q0AIcEeajYPW0ApiYNA">
         <target xmi:type="ecore:EReference" href="webpage.ecore#//Web/pages"/>
         <semanticElements xmi:type="ecore:EReference" href="webpage.ecore#//Web/pages"/>
-        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_ceoIYAIkEeajYPW0ApiYNA" routingStyle="manhattan" strokeColor="0,0,0">
-          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']/@style"/>
-          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_ceoIYQIkEeajYPW0ApiYNA" showIcon="false"/>
-          <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_ceoIYgIkEeajYPW0ApiYNA" labelSize="6" showIcon="false" labelColor="39,76,114"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_GtE1sAImEeajYPW0ApiYNA" description="_pp4F4AIdEeajYPW0ApiYNA" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_GtE1sQImEeajYPW0ApiYNA" showIcon="false"/>
+          <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_GtE1sgImEeajYPW0ApiYNA" labelSize="6" showIcon="false" labelColor="39,76,114"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
       </ownedDiagramElements>

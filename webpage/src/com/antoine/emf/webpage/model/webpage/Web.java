@@ -132,7 +132,7 @@ public interface Web extends EObject {
 	void setKeyword(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Pages</b></em>' reference list.
+	 * Returns the value of the '<em><b>Pages</b></em>' containment reference list.
 	 * The list contents are of type {@link com.antoine.emf.webpage.model.webpage.Webpage}.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -140,9 +140,9 @@ public interface Web extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Pages</em>' reference list.
+	 * @return the value of the '<em>Pages</em>' containment reference list.
 	 * @see com.antoine.emf.webpage.model.webpage.WebpagePackage#getWeb_Pages()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Webpage> getPages();

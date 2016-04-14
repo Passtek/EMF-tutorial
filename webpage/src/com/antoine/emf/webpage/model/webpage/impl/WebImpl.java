@@ -9,12 +9,15 @@ import com.antoine.emf.webpage.model.webpage.WebpagePackage;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -115,7 +118,7 @@ public class WebImpl extends MinimalEObjectImpl.Container implements Web {
 	protected String keyword = KEYWORD_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getPages() <em>Pages</em>}' reference list.
+	 * The cached value of the '{@link #getPages() <em>Pages</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPages()
@@ -234,9 +237,23 @@ public class WebImpl extends MinimalEObjectImpl.Container implements Web {
 	 */
 	public EList<Webpage> getPages() {
 		if (pages == null) {
-			pages = new EObjectResolvingEList<Webpage>(Webpage.class, this, WebpagePackage.WEB__PAGES);
+			pages = new EObjectContainmentEList<Webpage>(Webpage.class, this, WebpagePackage.WEB__PAGES);
 		}
 		return pages;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case WebpagePackage.WEB__PAGES:
+				return ((InternalEList<?>)getPages()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**

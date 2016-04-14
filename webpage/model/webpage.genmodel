@@ -12,7 +12,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Web/title"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Web/description"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Web/keyword"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference webpage.ecore#//Web/pages"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference webpage.ecore#//Web/pages"/>
     </genClasses>
     <genClasses ecoreClass="webpage.ecore#//Webpage">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Webpage/name"/>
